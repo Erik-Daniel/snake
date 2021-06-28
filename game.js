@@ -46,10 +46,6 @@ function food() {
 }
 
 
-
-
-
-
     window.onkeydown = function(key) {
         direction = key.key;
     }
@@ -118,7 +114,7 @@ function updateSnake(){
 
     
 }
-export  function drawSnake(container) {
+ function drawSnake(container) {
     container.innerHTML = ''
     
     img.src = 'assets/apple.png';
@@ -160,23 +156,10 @@ var biteAudio = new Audio('assets/bite.mp3');
     }
 }
 
-function won(){ 
-    console.log("won");
-}
-
-
-
-
-
-
-
-
-
-
 
 
 createMenu();
-export function main(currentTime) {
+ function main(currentTime) {
     if(!gameover){
     window.requestAnimationFrame(main);
     }
@@ -192,11 +175,7 @@ export function main(currentTime) {
     }
     
 
-
 }
-
-
-
 
 
 function createMenu() {
