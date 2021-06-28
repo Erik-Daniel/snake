@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <style>
+
+            #container {
+                width: 800px;
+                height: 800px; 
+                display: grid;
+                grid-template-columns: repeat(20,5%);
+                grid-template-rows: repeat(20,5%);
+                background-color: black;
+                
+                margin: auto;
+            }
+            .body {
+                background-color: red;
+                border: 5px solid white;
+            }
+            .apple {
+                width: 40px;
+                height: 40px;
+                grid-row-start: 10;
+                grid-column-start: 10;
+            }
+            #score {
+                text-align: center;
+            }
+            .play {
+                width: 350px;
+                height: 80px;
+                font-size: 40px;
+                grid-row-start: 8;
+                grid-column-start: 7;
+            }
+            .settings {
+                width:  350px;
+                height:  80px;
+                font-size: 40px;
+                grid-row-start: 12;
+                grid-column-start: 7;
+            }
+            .restart {
+                width: 350px;
+                height: 80px;
+                font-size: 40px;
+                grid-row-start: 10;
+                grid-column-start: 7;
+            }
+            .restartTalk {
+                width: 400px;
+                color: white;
+                font-size: 40px;
+                grid-row-start: 6;
+                grid-column-start: 7;
+            }
+            .quit {
+                width: 350px;
+                height: 80px;
+                font-size: 40px;
+                grid-row-start: 13;
+                grid-column-start: 7;
+            }
+            #restartBackground {
+                grid-row-start: 1;
+                grid-row-end: 21;
+                grid-column-start: 1;
+                grid-column-end: 21;
+                background-color: black;
+                opacity: 50%;
+            }
+            .goBack {
+                width: 350px;
+                height: 80px;
+                font-size: 40px;
+                grid-row-start: 12;
+                grid-column-start: 7;
+            }
+            .music {
+                width: 350px;
+                height: 80px;
+                font-size: 40px;
+                grid-row-start: 8;
+                grid-column-start: 7;
+            }
+        </style>
+
+    </head>
+
+
+
+    <body>
+        <h1 id="score">score: <span id="length">1</span></h1>
+     
+        <div id="container">
+
+        </div>
+       
+
+        <script src="game.js" defer  type="module"></script>
+    </body>
+</html>
