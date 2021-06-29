@@ -107,9 +107,6 @@ function updateSnake(){
         }
         }
     }
-    if(body.length === 400) {
-        won();
-    }
 
 
     
